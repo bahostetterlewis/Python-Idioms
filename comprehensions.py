@@ -27,7 +27,7 @@ d = {i*i:i for i in range(10)}  # reads: i*i maps to i for every i in range 0-9
 # Next an example of transforming one dict into another
 # Here we want to reverse a dict so that its values are now the keys and vice versa
 d = {'key1':'val1', 'key2':'val2', 'key3':'val3'}
-d = {v:k for k,v in d.items}  # reads: v maps to k for k and v in the dictionary
+d = {v:k for k,v in d.items()}  # reads: v maps to k for k and v in the dictionary
                          # generates the dictionary {'val1': 'key1', 'val3': 'key3', 'val2': 'key2'}
 
 
