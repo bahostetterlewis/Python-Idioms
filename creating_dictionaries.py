@@ -8,5 +8,12 @@ d = dict(zip(keylist, vallist))
 kvs = [('k1', 'v1'), ('k2', 'v2'), ('k3', 'v3')]
 d = dict(kvs)
 
+# from known keys with a default value
+# note that somevalue is optional and that
+# when not included defaults to None
+keys = ['k1', 'k2', 'k3']
+somevalue = 'value'
+d = dict.fromkeys(keys, somevalue)
+
 # explicit creation
 d = {'k1':'v1', 'k2':'v2', 'k3','v3'}
