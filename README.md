@@ -3,7 +3,8 @@ Python-Idioms
 
 Useful Python Idioms, Recipes,  and snippets.
 
-**Note**: *These apply mainly to python 3.x as they are built using that langauge.
+**Note**: *These apply mainly to python 3.x as they are built using that version.*
+
 This means that either:
 
 1. An entry will work on 2.7.x
