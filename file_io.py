@@ -1,7 +1,7 @@
 # reading from a file
 with open('myfile.txt', 'r') as f:
     for line in f:
-      print(line, end='')  # do any work here, I replicated cat!
+      print(line)
 
 # writing to a file
 with open('myfile.txt', 'w') as f:
