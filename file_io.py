@@ -1,7 +1,7 @@
 # reading from a file
 with open('myfile.txt', 'r') as f:
     for line in f:
-      print(line)
+      print(line)  # extra credit: add end='' as a param to pring and you recreated cat!
 
 # writing to a file
 with open('myfile.txt', 'w') as f:
