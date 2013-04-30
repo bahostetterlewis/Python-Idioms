@@ -5,6 +5,8 @@ d = dict(zip(keylist, vallist))
 
 # from iterable of tuples, note this is with a list but works with any iterable of tuples
 # also note they don't have to be tuples a list of lists works here as well
+# The only thing that must be true is each of the inner iterables must be 2 elements
+# and the first element must be hashable.
 kvs = [('k1', 'v1'), ('k2', 'v2'), ('k3', 'v3')]
 d = dict(kvs)
 
