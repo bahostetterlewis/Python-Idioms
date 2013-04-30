@@ -18,7 +18,7 @@ finite_squares = [i*i for i in range(10)]  # reads: i squard for every i in rang
 
 # Dict comprehensions are commonly used to generate modified dictionaries from other dictionaries
 # Or to map some initial value to a modified value
-# Just like list comprehensions these are generated at once so don't use infinite sequence
+# Just like list comprehensions these are generated at once so don't use infinite sequences
 
 # First, an example of mapping values. Lets map squares to their root from 0-9
 d = {i*i:i for i in range(10)}  # reads: i*i maps to i for every i in range 0-9
@@ -27,15 +27,15 @@ d = {i*i:i for i in range(10)}  # reads: i*i maps to i for every i in range 0-9
 # Next an example of transforming one dict into another
 # Here we want to reverse a dict so that its values are now the keys and vice versa
 d = {'key1':'val1', 'key2':'val2', 'key3':'val3'}
-d = {v:k for k,v in d.items()}  # reads: v maps to k for k and v in the dictionary
+d = {v:k for k,v in d.items()}  # reads: v maps to k for k and v in the dictionary's key value pairs
                          # generates the dictionary {'val1': 'key1', 'val3': 'key3', 'val2': 'key2'}
 
 
 # Generators are a special form of comprehension. They allow for the creation of
 # what is effectively a "co-routine".
 # They allow for manipulating infinite sequences and offer lazy evaluation.
-# This means that they will generate each number only when requested.
-# This gives them a small memory footprint only one value is created at a time
+# This means that they will generate each value only when requested.
+# This gives them a small memory footprint: only one value is created at a time
 # and it never stores previous values.
 
 # Using parens around a comprehension creates a generator
