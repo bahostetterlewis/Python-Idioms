@@ -10,7 +10,7 @@ This means that either:
 1. An entry will work on 2.7.x
 2. An entry will fail on 2.7.x
 3. An entry won't be efficient on 2.7.x (such as using range vs xrange)
-4. Something I haven't thoguht of
+4. Something I haven't thought of
 
 I try to use the standard library for the majority of my work so most of these will be based
 off of what is available to everyone who has installed python.
