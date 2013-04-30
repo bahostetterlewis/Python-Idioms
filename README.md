@@ -18,7 +18,7 @@ off of what is available to everyone who has installed python.
 My version: 3.3.1
 
 Resources
-=========
+---------
 [Raymond Hettinger's Twitter](https://twitter.com/raymondh)
 
 [Useful Python Videos](http://www.youtube.com/watch?v=sPiWg5jSoZI&list=PLJaXNHXr5Ws3MpYMlRXTyrg_NMz1NhF__)
