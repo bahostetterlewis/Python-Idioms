@@ -1,0 +1,19 @@
+# source:
+# http://stackoverflow.com/questions/16503887/search-for-a-key-in-an-array-in-which-consecutive-numbers-differ-by-1-1/16504064#16504064
+
+# Problem:
+# Find first occurance of a value in a list where l[n] == l[n-1]+1 or l[n] == l[n-1]-1
+# Do it better than O(n)
+
+def find(arr, value):
+    todo = [(0, len(arr)-1)]  # list of ranges where the value is possible
+    while todo:
+        low, high = todo.pop()
+        if low == high:
+            if arr[low] == value: return low
+            else: continue
+        mid = (low + high) // 2
+        diff = abs(arr[mid] - value)
+        if mid+diff <= high: todo.append([mid + diff, high])
+        if mid-diff >= low: todo.append([low, mid - diff])
+    raise ValueError('Value is not in the array')
