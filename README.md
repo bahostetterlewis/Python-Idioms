@@ -24,3 +24,4 @@ Resources
 [Useful Python Videos](http://www.youtube.com/watch?v=sPiWg5jSoZI&list=PLJaXNHXr5Ws3MpYMlRXTyrg_NMz1NhF__)
 
 [Python Standard Library Documentation](http://docs.python.org/3.3/library/)
+[Stack Overflow](http://stackoverflow.com/)
