@@ -15,7 +15,7 @@ This means that either:
 I try to use the standard library for the majority of my work so most of these will be based
 off of what is available to everyone who has installed python.
 
-My version: 3.3.1
+My version: 3.3.2
 
 Resources
 ---------
