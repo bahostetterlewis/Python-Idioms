@@ -9,7 +9,6 @@ def first_non_repeating(string):
     '''
     unique = (char for char,count in Counter(string).items() if count == 1) #  create a generator to provide all non repeated chars
     try:
-        location = min(string.find(char) for char in unique)  # find the location of first unique
+        return min(unique, key=string.find)  # find the first non duplicated char
     except ValueError:
         return ''  # This is returned when all charactors are duplicates
-    return string[location]
